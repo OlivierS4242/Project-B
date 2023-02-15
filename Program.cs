@@ -7,7 +7,7 @@
 //6: Alchemist’s garden​
 //7: Guard post​
 //8: Bridge​
-//9: Spider forest halloooooooo
+//9: Spider forest ha edit from oualid
 
 int room = 1;
 int prompt = 0;
