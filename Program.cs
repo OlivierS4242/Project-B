@@ -11,7 +11,7 @@
 
 int room = 1;
 int prompt = 0;
-Console.WriteLine("Useful commands:\r\n- go (north/east/south/west) , inspect map");
+Console.WriteLine("Useful commands:\r\n- (/N/E/S/W) , inspect map");
 while(room == 1) 
 {
     if (prompt == 0)
