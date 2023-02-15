@@ -249,4 +249,9 @@ public static class World
 
         return null;
     }
+    
+    public void Quit_game(object sender, EventArgs e)
+    {
+        this.close();
+    }
 }
