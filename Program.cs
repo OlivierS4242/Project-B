@@ -7,7 +7,7 @@
 //6: Alchemist’s garden​
 //7: Guard post​
 //8: Bridge​
-//9: Spider forest
+//9: Spider forest hallo
 
 int room = 1;
 int prompt = 0;
