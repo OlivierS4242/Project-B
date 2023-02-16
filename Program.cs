@@ -1,4 +1,5 @@
-﻿using system;
+using system;
+using world.cs;
 //Room 1 == Your house
 //Room 2 == Town Square
 //Room 3 == Farmer
@@ -7,12 +8,14 @@
 //6: Alchemist’s garden​
 //7: Guard post​
 //8: Bridge​
-//9: Spider forest ha edit from oualid
+//9: Spider forest
+
+
 
 int room = 1;
 int prompt = 0;
-Console.WriteLine("Useful commands:\r\n- (/N/E/S/W) , inspect map");
-while(room == 1) 
+Console.WriteLine("Useful commands:\r\n- (/N/E/S/W) , inspect map, quit");
+while (room == 1)
 {
     if (prompt == 0)
     {
@@ -30,6 +33,10 @@ while(room == 1)
         else if (room1.ToLower() == "E" || room1.ToLower() == "S" || room1.ToLower() == "W")
         {
             Console.WriteLine("There is a river here, you can't walk onto that.");
+        }
+        else if (room1.ToLower() == "quit")
+        {
+            Environment.Exit(0);
         }
         else
         {
@@ -67,6 +74,10 @@ while (room == 2)
             prompt = 0;
             Console.WriteLine("Farmer's place");
         }
+        else if (room1.ToLower() == "quit")
+        {
+            Environment.Exit(0);
+        }
     }
 }
 while (room == 3)
@@ -97,6 +108,10 @@ while (room == 3)
             room = 4;
             prompt = 0;
         }
+        else if (room1.ToLower() == "quit")
+        {
+            Environment.Exit(0);
+        }
     }
 }
 while (room == 4)
@@ -124,6 +139,10 @@ while (room == 4)
         else if (room1.ToLower() == "W")
         {
             Console.WriteLine("There is a river here, you can't walk onto that.");
+        }
+        else if (room1.ToLower() == "quit")
+        {
+            Environment.Exit(0);
         }
         else
         {
@@ -160,6 +179,10 @@ while (room == 5)
         {
             Console.WriteLine("There is a river here, you can't walk onto that.");
         }
+        else if (room1.ToLower() == "quit")
+        {
+            Environment.Exit(0);
+        }
         else
         {
             Console.WriteLine("I Dont understand that commend");
@@ -193,6 +216,10 @@ while (room == 6)
         {
             Console.WriteLine("There is a river here, you can't walk onto that.");
         }
+        else if (room1.ToLower() == "quit")
+        {
+            Environment.Exit(0);
+        }
         else
         {
             Console.WriteLine("I Dont understand that commend");
@@ -217,6 +244,10 @@ while (room == 7)
         else if (room1.ToLower() == "S" || room1.ToLower() == "N" || room1.ToLower() == "W")
         {
             Console.WriteLine("There is a river here, you can't walk onto that.");
+        }
+        else if (room1.ToLower() == "quit")
+        {
+            Environment.Exit(0);
         }
         else
         {
@@ -251,6 +282,10 @@ while (room == 8)
         {
             Console.WriteLine("There is a river here, you can't walk onto that.");
         }
+        else if (room1.ToLower() == "quit")
+        {
+            Environment.Exit(0);
+        }
         else
         {
             Console.WriteLine("I Dont understand that commend");
@@ -282,9 +317,14 @@ while (room == 9)
         {
             Console.WriteLine("You went back to the bridge");
         }
+        else if (room1.ToLower() == "quit")
+        {
+            Environment.Exit(0);
+        }
         else
         {
             Console.WriteLine("I Dont understand that commend");
         }
     }
 }
+
